@@ -1,0 +1,20 @@
+{
+  "name": "bower files.",
+  "version": "0.0.0",
+  "homepage": "www.onajjar.me",
+  "authors": [
+    "Osama Al-Najjar <najjariclub@gmail.com>"
+  ],
+  "description": "All files associated with bower and onajjar site.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
