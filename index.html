@@ -51,12 +51,12 @@
                 </div>
             </div>
         </div>
-        
+        <!--<a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="I am tooltip">Hover me!</a>-->
         <div class="row" id="custom-nav">
             <div id="nav-list-div">
                 <ul>
+                    <li class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="+966 053 3595 154"><i id="team-nav-item" class="fa fa-whatsapp fa-2x white-text nav-item"></i></li>
                     <li onclick="$('#contactModal').openModal()"><i id="contact-nav-item" class="mdi-content-mail small white-text nav-item"></i></li>
-                    <li onclick="showTeam()"><i id="team-nav-item" class="mdi-editor-format-paint small white-text nav-item"></i></li>
                     <li onclick="window.open('http://www.facebook.com/kfupmcourts')"><i id="facebook-nav-item" class="fa fa-facebook fa-2x white-text nav-item"></i></li>
                 </ul>
             </div>
@@ -166,5 +166,12 @@
     
     
     </body>
+    
+<script type="text/javascript">
+    // Initialize tooltips.
+    $(document).ready(function(){
+        $('.tooltipped').tooltip({delay: 50});
+    });
+</script>
     
 </html>
