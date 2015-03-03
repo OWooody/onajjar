@@ -1,17 +1,170 @@
+<!DOCTYPE html>
+
 <html>
 
     <head>
-        <!-- CSS -->
-        <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+        <title>Fablab Dhahran</title>
+    
+    <!-- CSS  -->
+    <link type="text/css" rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css"/>
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="http://fonts.hosni.netdna-cdn.com/fonts/cdn/file_font/?font=AraJozoor-Regular" rel="stylesheet">
 
-        <!-- JS  -->
-        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- JS  -->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     
     <body>
-        <div class="container">
-            <h3>Hello World!</h3>
+        
+        <!-- Login Modal -->
+        <div id="loginModal" class="modal">
+            <div class="row center-align">
+                <h5 class="modalHeader" id="loginHeader">أهلاً بك مجدداً</h5>
+            </div>
+            <div id="login" class="col s12 voffset5">
+                <div class="row">
+                    <div class="col s10 m10 offset-m1">
+                        <form>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="username" type="text" class="validate">
+                                    <label for="username">اسم المستخدم</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">كلمة المرور</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s5"><button class="btn waves-effect waves-light light-green darken-1" type="submit" name="action">تسجيل الدخول</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
+    
+        <nav id="navbar">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo right"><img id="logo" src="logo.png"></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down voffset3">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">عضو جديد</a></li>
+                    <li><a onclick="$('#loginModal').openModal();">تسجيل دخول</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <section>
+            <div id="background"></div>
+            
+            <div class="container" id="first-section-content">
+                <div class="row">
+                    <h1 class="center-align white-text">! نمكنك من صناعة كل شيء... تقريباً</h1>
+                </div>
+                <div class="row hide-on-small-only">
+                    <div class="col m4 l4 voffset7">
+                        <div class="circle"><i class="mdi-communication-location-on"></i></div>
+                        <h5 class="white-text circle-text center-align">فكر</h5>
+                    </div>
+                    <div class="col m4 l4 voffset7">
+                        <div class="circle"><i class="mdi-maps-local-library"></i></div>
+                        <h5 class="white-text circle-text center-align">صمم</h5>
+                    </div>
+                    <div class="col m4 l4 voffset7">
+                        <div class="circle"><i class="mdi-maps-my-location"></i></div>
+                        <h5 class="white-text circle-text center-align">نفذ</h5>
+                    </div>
+                </div>
+                <div class="down-arrow">
+                    <a class="btn-floating btn-large waves-effect waves-light white"><i class="mdi-hardware-keyboard-arrow-down black-text"></i></a>
+                </div>
+            </div>
+        
+        </section>
+        
+        
+        <section class="red darken-4">
+            
+            <div class="row">
+                <div class="col s12 voffset7">
+                    <div class="cd-intro">
+                        <h1 class="cd-headline zoom">
+                            <span class="cd-words-wrapper">
+                                <b class="is-visible">٣٠٠٠ زائر</b>
+                                <b>٣٠٠ مشروع</b>
+                                <b>٩ أجهزة</b>
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col s5 offset-s1 m2 offset-m2 l2 offset-l2 voffset7">
+                    <div class="circle"><i class="mdi-communication-location-on"></i></div>
+                    <h5 class="white-text circle-text center-align">أين تجدنا؟</h5>
+                </div>
+                <div class="col s5 m2 l2 voffset7">
+                    <div class="circle"><i class="mdi-maps-local-library"></i></div>
+                    <h5 class="white-text circle-text center-align">المكتبة</h5>
+                </div>
+                <div class="col s5 offset-s1 m2 l2 voffset7">
+                    <div class="circle"><i class="mdi-maps-my-location"></i></div>
+                    <h5 class="white-text circle-text center-align">ابدأ هنا</h5>
+                </div>
+                <div class="col s5 m2 l2 voffset7">
+                    <div class="circle"><i class="mdi-action-search"></i></div>
+                    <h5 class="white-text circle-text center-align">لتعرف أكثر</h5>
+                </div>
+            </div>
+        
+        </section>
+        
+        
+        <section class="white"> 
+             
+            <div class="row">
+                <h4 class="center-align black-text" id="third-section-header">أين تجدنا؟</h4>
+            </div>
+            
+            <div class="row">
+                <div class="col s5 offset-s1 m2 offset-m2 l2 offset-l2 voffset8">
+                    <div class="circle amber"><i class="mdi-device-access-time"></i></div>
+                    <h5 class="black-text circle-text center-align">ساعات العمل</h5>
+                </div>
+                <div class="col s5 m2 l2 voffset8">
+                    <div class="circle indigo"><i class="fa fa-facebook"></i></div>
+                    <h5 class="black-text circle-text center-align">فيس بوك</h5>
+                </div>
+                <div class="col s5 offset-s1 m2 l2 voffset8">
+                    <div class="circle red darken-4"><i class="fa fa-youtube"></i></div>
+                    <h5 class="black-text circle-text center-align">يوتيوب</h5>
+                </div>
+                <div class="col s5 m2 l2 voffset8">
+                    <div class="circle blue"><i class="fa fa-twitter"></i></div>
+                    <h5 class="black-text circle-text center-align">تويتر</h5>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col s12 voffset8">
+                    <p class="center-align">مجرة درب التبانة، كوكب الأرض، آسيا، المملكة العربية السعودية، المنطقة الشرقية</p>
+                    <p class="center-align">الظهران، جامعة الملك فهد للبترول والمعادن، مبنى ٢٦ معمل ١٢</p>
+                </div>
+            </div>
+        
+        </section>
+    
+    
     </body>
     
 </html>
