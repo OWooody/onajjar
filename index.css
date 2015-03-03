@@ -72,6 +72,12 @@ section {
     padding-top: 150px;
 }
 
+@media only screen and (max-width: 768px) {
+    #first-section-content {
+        padding-top: 10px;
+    }
+}
+
 #third-section-header {
     padding-top: 100px;
     margin-top: 0;
