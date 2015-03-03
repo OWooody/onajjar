@@ -51,17 +51,16 @@
                 </div>
             </div>
         </div>
-    
-        <nav id="navbar" class="hide-on-small-only">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo right"><img id="logo" src="logo.png"></a>
-                <ul id="nav-mobile" class="left voffset3">
-                    <li><a href="#">English</a></li>
-                    <li><a href="#">مكاني</a></li>
-                    <li><a onclick="$('#contactModal').openModal();">راسلني</a></li>
+        
+        <div class="row" id="custom-nav">
+            <div id="nav-list-div">
+                <ul>
+                    <li onclick="$('#contactModal').openModal()"><i id="contact-nav-item" class="mdi-content-mail small white-text nav-item"></i></li>
+                    <li onclick="showTeam()"><i id="team-nav-item" class="mdi-editor-format-paint small white-text nav-item"></i></li>
+                    <li onclick="window.open('http://www.facebook.com/kfupmcourts')"><i id="facebook-nav-item" class="fa fa-facebook fa-2x white-text nav-item"></i></li>
                 </ul>
             </div>
-        </nav>
+        </div>
         
         <section>
             <div id="background"></div>
