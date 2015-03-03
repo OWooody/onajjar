@@ -77,6 +77,10 @@ section {
     margin-top: 0;
 }
 
+#mom {
+    color: #B71C1C;
+}
+
 
 
 
@@ -133,9 +137,8 @@ section {
 }
 
 .cd-intro {
-  width: 90%;
-  max-width: 768px;
-  text-align: center;
+  width: 100%;
+  text-align: right;
 }
 
 .cd-intro {
@@ -153,8 +156,9 @@ section {
 }
 
 .cd-headline {
-  font-size: 3rem;
+  font-size: 1.5rem;
   line-height: 1.2;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .cd-headline {
@@ -479,7 +483,7 @@ xzoom
   -webkit-perspective: 300px;
   -moz-perspective: 300px;
   perspective: 300px;
-  text-align: center;
+  text-align: left;
 }
 .cd-headline.zoom b {
   opacity: 0;

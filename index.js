@@ -39,7 +39,7 @@ jQuery(document).ready(function($){
 					var wordWidth = $(this).width();
 				    if (wordWidth > width) width = wordWidth;
 				});
-				headline.find('.cd-words-wrapper').css('width', '100%');
+				headline.find('.cd-words-wrapper').css('width', width);
 			};
 
 			//trigger animation
