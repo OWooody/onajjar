@@ -128,10 +128,19 @@ section {
     color: #3f51b5 !important;
 }
 
+#second-section-div p {
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+}
 
-
-
-
+@media only screen and (max-width: 768px) {
+    #second-section-div p {
+        font-size: 15px;
+        text-align: center;
+        line-height: 50px;
+    }
+}
 
 
 
