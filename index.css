@@ -12,6 +12,12 @@ section {
     height: 100vh;
 }
 
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;       
+    }
+}
+
 .voffset  { margin-top: 2px; }
 .voffset1 { margin-top: 5px; }
 .voffset2 { margin-top: 10px; }
@@ -68,6 +74,11 @@ section {
     font-size: 25px;
 }
 
+#about-section .circle:hover {
+    border-color: black;
+    cursor: pointer;
+}
+
 #background {
     z-index: -1;
     position: fixed;
@@ -97,9 +108,29 @@ section {
     }
 }
 
+#first-section-content .circle {
+    cursor: pointer;
+}
+
+#elm-circle:hover {
+    color: #1B5E20;
+}
+
+#code-circle:hover {
+    color: black;
+}
+
+#mom-circle:hover {
+    color: #B71C1C;
+}
+
 #third-section-header {
-    padding-top: 100px;
+    padding-top: 50px;
     margin-top: 0;
+}
+
+#about-section-circles-div {
+    margin-top: 15%;
 }
 
 #mom {
@@ -139,9 +170,9 @@ section {
 }
 
 #second-section-div p {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
-    line-height: 100px;
+    line-height: 75px;
 }
 
 @media only screen and (max-width: 768px) {
