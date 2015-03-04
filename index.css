@@ -2,6 +2,16 @@ body {
     font-family: 'AraJozoor-Regular';
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    height: 100vh;
+}
+
 .voffset  { margin-top: 2px; }
 .voffset1 { margin-top: 5px; }
 .voffset2 { margin-top: 10px; }
@@ -14,6 +24,10 @@ body {
 .voffset9 { margin-top: 150px; }
 .voffset10 { margin-top: 20%; }
 
+#about-section {
+    position: relative;
+    margin: 0 auto;
+}
 
 #logo {
     width: 250px;
@@ -24,10 +38,6 @@ body {
     box-shadow: none;
     padding: 15px;
     position: absolute;
-}
-
-section {
-    height: 100vh;
 }
 
 .circle {
