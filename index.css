@@ -1,5 +1,6 @@
 body {
     font-family: 'AraJozoor-Regular';
+        direction: rtl;
 }
 
 footer {
@@ -181,6 +182,15 @@ section {
         text-align: center;
         line-height: 50px;
     }
+}
+
+#contactModal form input, textarea {
+    text-align: right;
+}
+
+#contactModal form label {
+    right: 0.75rem;
+    left: auto;
 }
 
 
