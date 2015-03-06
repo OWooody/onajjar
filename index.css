@@ -1,6 +1,13 @@
 body {
     font-family: 'AraJozoor-Regular';
-        direction: rtl;
+    direction: rtl;
+}
+
+@media print {
+    body, section {
+        background: white;
+        color: black;
+    }
 }
 
 footer {
