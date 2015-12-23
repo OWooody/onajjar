@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>أسامة النجار</title>
+    
+    <!-- CSS  -->
+    <link type="text/css" rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css"/>
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--<link href="http://fonts.hosni.netdna-cdn.com/fonts/cdn/file_font/?font=AraJozoor-Regular" rel="stylesheet">-->
+
+    <!-- JS  -->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+    <!-- META  -->
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        
+    </head>
+    
+    <body>
+        
+        <!-- Login Modal -->
+        <div id="contactModal" class="modal">
+            <div class="row center-align">
+                <h5 class="modalHeader" id="loginHeader">سيصلك ردي خلال ٤٨ ساعة</h5>
+            </div>
+            <div class="col s12 voffset5">
+                <div class="row">
+                    <div class="col s12 m10 offset-m1">
+                        <form method="post" action="mailto:s201192350@kfupm.edu.sa">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" type="text" class="validate">
+                                    <label for="email">البريد الإلكتروني أو رقم الجوال</label>
+                                </div>
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea class="materialize-textarea" required></textarea>
+                                <label>الرسالة</label>
+                            </div>
+                            <div class="row">
+                                <div class="col s12"><button class="btn waves-effect waves-light light-green darken-1" type="submit" name="action">إرسال</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col s12 m7 l3">
+                
+            </div>
+      </div>
+        
+        
+    
+    </body>
+    
+    <script type="text/javascript">
+        // Initialize tooltips.
+        $(document).ready(function(){
+            $('.tooltipped').tooltip({delay: 50});
+        });
+    </script>
+    
+    <script>
+        function goToByScroll(id) {
+            // Scroll
+            $('html,body').animate({
+                scrollTop: $("#"+id).offset().top}, 750);
+        }
+    </script>
+    
+</html>

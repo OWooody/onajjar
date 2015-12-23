@@ -1,85 +1,135 @@
-<!DOCTYPE html>
+<!-- THIS DOCUMENT HAS NO COMMENT, CAUSE WHY NOT ;) -->
 
+
+
+<!doctype html>
 <html>
-
-    <head>
-        <title>أسامة النجار</title>
     
-    <!-- CSS  -->
-    <link type="text/css" rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css"/>
-    <link type="text/css" rel="stylesheet" href="index.css"/>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!--<link href="http://fonts.hosni.netdna-cdn.com/fonts/cdn/file_font/?font=AraJozoor-Regular" rel="stylesheet">-->
-
-    <!-- JS  -->
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
-
-    <!-- META  -->
-    <meta charset="utf-8">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        
-    </head>
+<head>
+    <title>Osama</title>
     
-    <body>
-        
-        <!-- Login Modal -->
-        <div id="contactModal" class="modal">
-            <div class="row center-align">
-                <h5 class="modalHeader" id="loginHeader">سيصلك ردي خلال ٤٨ ساعة</h5>
-            </div>
-            <div class="col s12 voffset5">
-                <div class="row">
-                    <div class="col s12 m10 offset-m1">
-                        <form method="post" action="mailto:s201192350@kfupm.edu.sa">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="email" type="text" class="validate">
-                                    <label for="email">البريد الإلكتروني أو رقم الجوال</label>
-                                </div>
-                            </div>
-                            <div class="input-field col s12">
-                                <textarea class="materialize-textarea" required></textarea>
-                                <label>الرسالة</label>
-                            </div>
-                            <div class="row">
-                                <div class="col s12"><button class="btn waves-effect waves-light light-green darken-1" type="submit" name="action">إرسال</button></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col s12 m7 l3">
-                
-            </div>
-      </div>
-        
-        
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     
-    </body>
-    
-    <script type="text/javascript">
-        // Initialize tooltips.
-        $(document).ready(function(){
-            $('.tooltipped').tooltip({delay: 50});
-        });
-    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="assets/js/typed.min.js"></script>
+<!--    <script src="assets/js/custom-typed.js"></script>-->
     
     <script>
-        function goToByScroll(id) {
-            // Scroll
-            $('html,body').animate({
-                scrollTop: $("#"+id).offset().top}, 750);
-        }
+	$(function(){
+        
+        var sen1 = "Hi,^1500 you may be wondering if this is the website of Osama that ^<b>you</b> know?^1500 Yes I'm Osama Al-Najjar, I like black and simple things";
+        var sen2 = "<i class='fa fa-birthday-cake fa-2x'></i>^500 I was born in 1993, I'm my biggest brothers so basically I was an experiment";
+        var sen3 = "<i class='fa fa-dribbble fa-2x'></i>^500 I love playing basketball and soccer, running is also my favourite";
+
+		$("#typed").typed({
+			strings: [sen1, sen2, sen3, "Try it out!"],
+            contentType: 'html',
+			startDelay: 1500,
+            typeSpeed: 50,
+            backSpeed: -500,
+            backDelay: 1000,
+            loop: false,
+            showCursor: true,
+      callback: function(){
+        shift();
+      }
+		});
+
+	});
+
+        
+	</script>
+
+<!--
+    <script>
+        $(function(){
+            $("#typed").typed({
+                stringsElement: $('#typed-strings'),
+                startDelay: 1500,
+                typeSpeed: 50,
+                backSpeed: -500,
+                backDelay: 1000,
+                loop: false,
+                showCursor: true,
+                //cursorChar: "sdf",
+            });
+        });
+        
+//        $(".reset").click(function(){
+//            console.log("asdf");
+//            $("#typed").typed('reset');
+//        });
     </script>
+-->
+    
+    <style>
+        
+        .typed-cursor{
+            opacity: 1;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        
+        @keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+
+    </style>
+      	
+</head>
+    
+<body>
+    
+    
+<!--            <span class="typed-cursor">|</span>-->
+
+    <div class="row">
+        <br /><br /><br /> 
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-6 col-lg-offset-3">
+            <span id="typed"></span>
+<!--
+            <div id="typed-strings">
+                <p>Hi,^1500 you may be wondering if this is the website of Osama that <b>you</b> know?^1500 Yes I'm Osama Al-Najjar, I like black and simple things</p>
+                <p><i class="fa fa-birthday-cake fa-2x"></i>^500 I was born in 1993, I'm my biggest brothers so basically I was an experiment</p>
+                <p><i class="fa fa-dribbble fa-2x"></i>^500 I love playing basketball and soccer, running is also my favourite</p>
+                <p><i class="fa fa-university fa-2x"></i>^500 I studied high school in Saudi Arabia^1000, then joined KFUPM (King Fahad Uni.)</p>
+                <p><i class="fa fa-graduation-cap fa-2x"></i>^500 I'm currently studying Software Engineering and graduating in 2016</p>
+                <p><i class="fa fa-briefcase fa-2x"></i>^500 I'm currently working @ Waki, a startup that me and two collegues established 1 year ago</p>
+                <p><i class="fa fa-thumbs-up fa-2x"></i>^500 Waki is an online reservation service that provides reservation solutions to many type of sectors</p>
+                <p>
+                    <a href="https://waki.io" target="_blank"><i class="fa fa-thumbs-up fa-2x"></i></a><br />
+                    <a href="https://sa.linkedin.com/in/osama-al-najjar-9871b773" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a><br />
+                    <a href="https://sa.linkedin.com/in/osama-al-najjar-9871b773" target="_blank"><i class="fa fa-twitter fa-2x"></i></a><br />
+                    <a href="#" class="reset">or again?</a>
+                </p>
+            </div>
+            <span class="typed-cursor">|</span>
+-->
+<!--            <span id="typed"></span>-->
+        </div>
+    </div>
+        
+</body>
     
 </html>
