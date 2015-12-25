@@ -12,11 +12,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.js" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/typed.min.js"></script>
 
     <script>
@@ -29,41 +29,46 @@
                 backDelay: 1000,
                 loop: false,
                 showCursor: true,
-                //cursorChar: "sdf",
+                callback: function(){ finish(); }
             });
         });
         
-//        $(".reset").click(function(){
-//            console.log("asdf");
-//            $("#typed").typed('reset');
-//        });
+        function finish() {
+            $("#skip-button").text("Show all");
+        }
     </script>
     
     <style>
         
-        .typed-cursor{
+        .typed-cursor {
             opacity: 1;
             -webkit-animation: blink 0.7s infinite;
             -moz-animation: blink 0.7s infinite;
             animation: blink 0.7s infinite;
         }
         
-        @keyframes blink{
+        @keyframes blink {
             0% { opacity:1; }
             50% { opacity:0; }
             100% { opacity:1; }
         }
         
-        @-webkit-keyframes blink{
+        @-webkit-keyframes blink {
             0% { opacity:1; }
             50% { opacity:0; }
             100% { opacity:1; }
         }
         
-        @-moz-keyframes blink{
+        @-moz-keyframes blink {
             0% { opacity:1; }
             50% { opacity:0; }
             100% { opacity:1; }
+        }
+        
+        #skip-button {
+            position: fixed;
+            bottom: 10px;
+            margin: auto;
         }
 
     </style>
@@ -72,30 +77,69 @@
     
 <body>
     
-    <div class="row">
-        <br /><br /><br /> 
+    <div class="row" id="typed-div">
+        <br /><br /><br />
         <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-6 col-lg-offset-3">
             <div id="typed-strings">
-                <p>Hi,^1500 you may be wondering if this is the website of Osama that <b>you</b> know?^1500 Yes I'm Osama Al-Najjar, I like black and simple things</p>
-                <p><i class="fa fa-birthday-cake"></i>^500 I was born in 1993, I'm my biggest brothers so basically I was an experiment</p>
+                <p>Hi,^1500 you have reached <b>Osama</b> Al-Najjar website, I like black and simple things</p>
                 <p><i class="fa fa-dribbble"></i>^500 I love playing basketball and soccer, running is also my favourite</p>
                 <p><i class="fa fa-heartbeat" style="color: red;"></i> My girl friend lives in^1000</p>
                 <p>ooops</p>
-                <p><i class="fa fa-university"></i>^500 I studied high school in Saudi Arabia^1000, then joined KFUPM (King Fahad Uni.)</p>
-                <p><i class="fa fa-graduation-cap"></i>^500 I'm currently studying Software Engineering and graduating in 2016</p>
+                <p><i class="fa fa-graduation-cap"></i>^500 I'm currently studying Software Engineering @ King Fahd Uni.</p>
                 <p><i class="fa fa-briefcase"></i>^500 I'm currently working @ Waki, a startup that me and two collegues established 1 year ago</p>
-                <p><i class="fa fa-thumbs-up"></i>^500 Waki is an online reservation service that provides reservation solutions to many type of sectors</p>
                 <p>
-                    <a href="https://waki.io" target="_blank"><i class="fa fa-thumbs-up fa-2x"></i></a><br />
-                    <a href="https://sa.linkedin.com/in/osama-al-najjar-9871b773" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a><br />
-                    <a href="https://sa.linkedin.com/in/osama-al-najjar-9871b773" target="_blank"><i class="fa fa-twitter fa-2x"></i></a><br />
-                    <a href="#" class="reset">or again?</a>
+                    <a href="https://sa.linkedin.com/in/osama-al-najjar-9871b773" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a><br />
+                    <a href="index.html" class="reset" style="color: grey;">or again?</a>
                 </p>
             </div>
             <span id="typed"></span>
         </div>
     </div>
+    
+    <div class="row" id="normal-div" style="display: none;">
+        <br /><br /><br />
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-6 col-lg-offset-3">
+            <div>
+                <p>Hi, you have reached <b>Osama</b> Al-Najjar website, I like black and simple things</p>
+                <br />
+                <p><i class="fa fa-dribbble"></i> I love playing basketball and soccer, running is also my favourite</p>
+                <br />
+                <p><i class="fa fa-graduation-cap"></i> I'm currently studying Software Engineering @ King Fahd Uni.</p>
+                <br />
+                <p><i class="fa fa-briefcase"></i> I'm currently working @ <b>Waki</b>, a startup that me and two collegues established 1 year ago</p>
+                <br />
+                <p>
+                    <a href="https://sa.linkedin.com/in/osama-al-najjar-9871b773" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a><br />
+                    <a href="index.html" class="reset" style="color: grey;">or again?</a>
+                </p>
+            </div>
+            <span id="typed"></span>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-6 col-lg-offset-3">
+            <a href="#" onclick="skip()" id="skip-button" style="color: grey;" hidden="hidden">Skip</a>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            setTimeout(function(){
+                $("#skip-button").show();
+            }, 2000);
+        })
+    </script>
+    
+    
+    <script type="text/javascript">
+        function skip() {
+            $("#typed-div").hide();
+            $("#skip-button").hide();
+            $("#normal-div").show();
+        }
+    </script>
         
 </body>
-    
+
 </html>
