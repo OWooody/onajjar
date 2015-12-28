@@ -1,50 +1,38 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Roboto Thin'), local('Roboto-Thin'), url(vzIUHo9z-oJ4WgkpPOtg13YhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(d-6IYplOFocCacKzxwXSOLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
 body {
-    font-size: 5rem;
+    font-size: 75px;
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
     color: white;
     background-color: #31343c;
 }
 
-.row {
-    overflow: scroll;
-}
-
 /*
-p{
-  font-size: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end); 
+@media screen and (max-width: 770px) {
+    body {
+        font-size: 100px;
+    }
+}
+*/
+
+.row {
+    margin-top: 10%;
 }
 
-p:nth-child(2){
-  animation: type2 8s steps(60, end);
+#normal-div {
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-
-p a{
-  text-decoration: none;
-}
-
-span{
-  animation: blink 1s infinite;
-}
-
-@keyframes type{ 
-  from { width: 0; } 
-} 
-
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
-
-@keyframes blink{
-  to{opacity: .0;}
-}
-
-::selection{
-  background: black;
-}*/
